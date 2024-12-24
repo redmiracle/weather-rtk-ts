@@ -21,7 +21,7 @@ export const weatherApi = createApi({
                     name:response.name,
                     temp:response.main.temp,
                     pressure:response.main.pressure,
-                    sunset:response.sys.sunset
+                    sunset:response.sys.sunset*1000
                 }
             },
 
